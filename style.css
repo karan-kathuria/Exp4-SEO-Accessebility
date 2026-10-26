@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #f6f3eb;
+    color: #343a32;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    padding: 45px 20px 35px;
+    text-align: center;
+}
+
+.small-title,
+.section-label {
+    color: #87452f;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h1 {
+    color: #294738;
+    font-size: 38px;
+    margin: 10px 0;
+}
+
+h1 span {
+    color: #87452f;
+}
+
+.intro {
+    color: #555b52;
+    margin-top: 0;
+}
+
+nav {
+    text-align: center;
+    padding: 14px;
+    border-top: 1px solid #dfded3;
+    border-bottom: 1px solid #dfded3;
+}
+
+nav a {
+    color: #294738;
+    text-decoration: none;
+    margin: 0 16px;
+    font-size: 14px;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #87452f;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 24px;
+}
+
+.welcome {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+    align-items: center;
+    background-color: #fffdf7;
+    border: 1px solid #e5e0d5;
+    padding: 28px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #294738;
+    margin-top: 5px;
+}
+
+.welcome h2 {
+    font-size: 27px;
+}
+
+.note {
+    background-color: #e8ede3;
+    padding: 18px;
+    border-radius: 6px;
+}
+
+.note p {
+    color: #50564e;
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+.note h3 {
+    color: #294738;
+    margin: 8px 0;
+}
+
+.learning-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 18px;
+}
+
+article {
+    background-color: #fffdf7;
+    border: 1px solid #e5e0d5;
+    border-radius: 7px;
+    padding: 18px;
+}
+
+.number {
+    color: #87452f;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+article h3 {
+    color: #294738;
+    margin-bottom: 8px;
+}
+
+article p {
+    color: #50564e;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.goals {
+    background-color: #e8ede3;
+    padding: 22px 28px;
+    border-radius: 8px;
+}
+
+.goals li {
+    margin-bottom: 7px;
+}
+
+footer {
+    text-align: center;
+    border-top: 1px solid #dfded3;
+    padding: 16px;
+    color: #555b52;
+    font-size: 12px;
+}
+
+footer p {
+    margin: 4px;
+}
+
+@media (max-width: 650px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .welcome,
+    .learning-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome {
+        padding: 20px;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+}
